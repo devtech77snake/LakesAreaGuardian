@@ -152,7 +152,7 @@ const Home = () => {
 
 			<hr
 				className="text-center m-auto"
-				style={{ maxWidth: "1300px", fontFamily: "Arial", width: "75%", height: "2px", color: "black", backgroundColor: "black" }}
+				style={{ maxWidth: "1000px", width: "65%", height: "2px", color: "black", backgroundColor: "black" }}
 			/>
 			<br />
 
