@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, HashRouter } from "react-router-dom";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -10,7 +10,7 @@ import Privacy from "./components/privacy";
 
 const App = () => {
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<Routes>
 				<Route path="/" element={<Layout />}>
 					<Route index element={<Home />} />
@@ -18,7 +18,7 @@ const App = () => {
 				</Route>
 				<Route path="*" element={<Navigate to={"/"}></Navigate>} />
 			</Routes>
-		</BrowserRouter>
+		</HashRouter>
 	);
 };
 
