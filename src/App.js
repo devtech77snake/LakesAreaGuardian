@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, Navigate } from "react-router-dom";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -7,7 +7,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import Layout from "./pages/index";
 import Home from "./components/home";
 import Privacy from "./components/privacy";
-import Nopage from "./components/nopage";
 
 const App = () => {
 	return (
@@ -17,7 +16,7 @@ const App = () => {
 					<Route index element={<Home />} />
 					<Route path="/privacy_policy" element={<Privacy />} />
 				</Route>
-				<Route path="*" element={<Nopage />} />
+				<Route path="*" element={<Navigate to={"/"}></Navigate>} />
 			</Routes>
 		</BrowserRouter>
 	);
