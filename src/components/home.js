@@ -19,7 +19,7 @@ const Home = () => {
 				<div className="col-sm-1"></div>
 				<div className="col-sm-3">
 					<div className="mx-auto d-block" style={{ maxWidth: "300px" }}>
-						<img src="./image/Dick_final.png" className="img-fluid mx-auto d-block" />
+						<img src="./image/Dick_final.png" alt="avatar" className="img-fluid mx-auto d-block" />
 					</div>
 				</div>
 				<div className="col-sm-7">

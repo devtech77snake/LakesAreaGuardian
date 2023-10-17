@@ -1,25 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { useInView } from "react-intersection-observer";
 
 const Navbar = () => {
-	const [navbarColor, setNavbarColor] = useState("darkred");
-
-	useEffect(() => {
-		const changeNavbarColor = () => {
-			if (window.scrollY == 0) {
-				setNavbarColor("darkred");
-			} else {
-				setNavbarColor("rgba(33,33,33,1)");
-			}
-		};
-		window.addEventListener("scroll", changeNavbarColor);
-	}, [window.scroll]);
+	const { ref, inView } = useInView({
+		threshold: 0,
+	});
 
 	return (
 		<>
 			<nav
 				id="navbar"
 				className="navbar navbar-expand-md fixed-top"
-				style={{ backgroundColor: `${navbarColor}`, transition: "background-color 0.5s ease" }}
+				style={{ backgroundColor: inView ? "darkred" : "rgba(33,33,33,1)", transition: "background-color 0.5s ease" }}
 			>
 				<div className="container-fluid">
 					<a className="navbar-brand text-white" href="/">
@@ -52,6 +44,7 @@ const Navbar = () => {
 					</div>
 				</div>
 			</nav>
+			<div ref={ref} style={{ height: "0" }}></div>
 		</>
 	);
 };
