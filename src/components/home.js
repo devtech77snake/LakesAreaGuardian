@@ -3,7 +3,7 @@ import TypeWriter from "typewriter-effect";
 
 const Home = () => {
 	return (
-		<>
+		<div>
 			<div
 				id="home"
 				className="row mx-auto"
@@ -174,24 +174,25 @@ const Home = () => {
 			>
 				<p className="fst-italic fw-bold fs-5">Contact Me</p>
 				<div className="row">
-					<div className="col-sm-4 text-break">
+					<div className="col">
 						<p id="location">Location: Ferfus Falls, Minnesota, USA</p>
 						<p style={{ fontFamily: "Arial", marginBottom: 0 }}>
-							<span id="phone">Phone: 218-282-5883</span>(<a href="tel://1-218-282-5883/">Call me</a>)
+							<span id="phone">Phone: 218-282-5883 </span>(<a href="tel://1-218-282-5883/">Call&nbsp;me</a>)
 						</p>
 						<span className="font-arial fw-bold" style={{ fontSize: "12px" }}>
 							Mobile or installed dialor required
 						</span>
 						<p>
-							<span id="email">Email: RKeeton@LakesAreaGuardian.com</span>(<a href="mailto:RKeeton@LakesAreaGuardian.com">Email me</a>)
+							<span id="email">Email: RKeeton@LakesAreaGuardian.com </span>(
+							<a href="mailto:RKeeton@LakesAreaGuardian.com">Email&nbsp;me</a>)
 						</p>
 					</div>
-					<div className="col-sm-8">
+					<div className="col qrcode">
 						<img src="./image/qrcode.png" alt="QRCode" width={128} height={128} />
 					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 
