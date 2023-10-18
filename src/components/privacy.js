@@ -24,8 +24,8 @@ const Privacy = () => {
 					</p>
 
 					<p className="text-break" style={{ fontFamily: "Arial", fontSize: "15px" }}>
-						We collect the minimum amount of information about you that is commensurate with providing you with a satisfactory service.
-						This policy indicates the type of processes that may result in data being collected about you.
+						We collect the minimum amount of information about you that is necessary to provide you with satisfactory service. This policy
+						indicates the type of information and how it will be used that may be collected about you.
 					</p>
 				</div>
 			</div>
@@ -37,7 +37,7 @@ const Privacy = () => {
 
 				<p className="text-break" style={{ fontFamily: "Arial" }}>
 					We may collect any or all of the information that you give us, including your name, address, telephone number, and email address,
-					together with data about your use of the website. "Other information that may be needed from time to time to process a request may
+					together with data about your use of the website. Other information that may be needed from time to time to process a request may
 					also be collected.
 				</p>
 			</div>
@@ -65,7 +65,7 @@ const Privacy = () => {
 				<p className="text-break" style={{ fontFamily: "Arial" }}>
 					Your Internet browser has the built-in facility for storing small files, "cookies," that hold information to maximize your
 					browsing experience. Our website takes advantage of this facility to further enhance the function and operation of the website.
-					"You have the ability to prevent your computer from accepting cookies, but if you do, certain functionality on the website may be
+					You have the ability to prevent your computer from accepting cookies, but if you do, certain functionality on the website may be
 					impaired.
 				</p>
 			</div>
@@ -82,11 +82,11 @@ const Privacy = () => {
 				</p>
 				<p className="text-break" style={{ fontFamily: "Arial" }}>
 					We may from time to time provide information of a general nature to third parties, for example, the number of individuals visiting
-					our website. "Any such information will not include personal details that could identify website users.
+					our website. Any such information will not include personal details that could identify website users.
 				</p>
 			</div>
 
-			<div id="change_policy" className="mx-auto" style={{ padding: "0px 70px 0px 70px", maxWidth: "1300px", marginBottom: "50px" }}>
+			<div id="change_policy" className="mx-auto" style={{ padding: "0px 70px 0px 70px", maxWidth: "1300px" }}>
 				<p className="fst-italic fw-bold fs-5" style={{ fontFamily: "Arial" }}>
 					Changes To This Policy
 				</p>
